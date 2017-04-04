@@ -92,9 +92,10 @@ dependencies {
 }
 
 buildscript {
-    ext.kotlin_version = '1.1.1'
+    ext.kotlin_version = '1.1.2-eap-44'
     repositories {
         jcenter()
+        maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.1' }	
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -105,4 +106,5 @@ buildscript {
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
+    maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.1' }	
 }
